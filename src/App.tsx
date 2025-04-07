@@ -46,7 +46,7 @@ const App = () => {
     }
   };
   //6. addTodo의 매개변수 text의 타입을 지정해주세요. Todo 타입을 참고하세요.
-  const addTodo = (text: string) => {
+  const addTodo = (text) => {
     const newTodo = {
       id: Date.now(),
       text,
@@ -56,7 +56,7 @@ const App = () => {
   };
 
   //7. toggleComplete의 매개변수 id의 타입을 지정해주세요. Todo 타입을 참고하세요
-  const toggleComplete = (id: number) => {
+  const toggleComplete = (id) => {
     setTodos(
       todos.map((todo) =>
         todo.id === id ? { ...todo, completed: !todo.completed } : todo
