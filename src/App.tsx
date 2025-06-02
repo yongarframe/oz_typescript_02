@@ -25,7 +25,7 @@ const App = () => {
     { id: 3, text: "할 일 3", completed: true },
   ]);
   //4. filter 상태가 올바른 타입을 받아올 수 있도록 타입을 지정해주세요.
-  //힌트 : 리액트에서 props의 타입을 정의하는 방법 -> useState<타입>(초기값)
+  //힌트 : 리액트에서 state의 타입을 정의하는 방법 -> useState<타입>(초기값)
   //이때 초기값은 Filter.SHOW_ALL로 설정합니다.
   const [filter, setFilter] = useState();
 
